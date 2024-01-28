@@ -1,0 +1,52 @@
+{
+    "name": "goran-popovic/email-octopus-laravel",
+    "description": "Email Octopus SDK for Laravel",
+    "keywords": [
+        "email",
+        "email octopus",
+        "newsletter",
+        "mailing list",
+        "campaign",
+        "marketing",
+        "php",
+        "laravel",
+        "sdk"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Goran Popović",
+            "email": "goran.popovic@geoligard.com",
+            "homepage": "https://geoligard.com"
+        }
+    ],
+    "homepage": "https://github.com/goran-popovic/email-octopus-laravel",
+    "type": "library",
+    "require": {
+        "php": "^7.2.5|^8.0",
+        "illuminate/support": "^7.0|^8.0|^9.0|^10.0",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "goran-popovic/email-octopus-php": "dev-main"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GoranPopovic\\EmailOctopus\\Providers\\EmailOctopusServiceProvider"
+            ],
+            "aliases": {
+                "EmailOctopus": "GoranPopovic\\EmailOctopus\\Facades\\EmailOctopus"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "GoranPopovic\\EmailOctopus\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist"
+    }
+}
